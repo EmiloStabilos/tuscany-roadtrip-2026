@@ -21,10 +21,7 @@ The SQL schema and policy scaffolding live in:
 - `supabase/migrations/0001_fork_first_schema.sql`
 
 Sample trip seed lives in:
-- `supabase/seed/tuscany_2026.sql` (fully populated for July 6-12 itinerary, days, stops, and route segments)
-
-Visual theme tokens for the Tuscany aesthetic live in:
-- `src/lib/trip-theme.ts`
+- `supabase/seed/tuscany_2026.sql`
 
 Apply in Supabase SQL editor or via CLI migrations.
 
@@ -46,13 +43,3 @@ Create `.env.local`:
 - Add Next.js UI using these tables and policies.
 - Add server actions/API routes validated with Zod.
 - Add Sentry and Vercel Analytics to the app shell.
-
-## Vercel Deployment
-1. Import this repository into Vercel.
-2. Framework preset: **Next.js** (auto-detected via `vercel.json`).
-3. Add environment variables from the list above.
-4. Deploy: every push gets a Preview deployment; merge to main for Production.
-
-Run locally:
-- `npm install`
-- `npm run dev`
